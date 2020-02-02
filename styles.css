@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+}
+
+.txt-guide {
+    font-size: 3rem;
+    text-transform: uppercase;
+    opacity: .1;
+}
+
+#field {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    color: lightblue;
+    padding: 100px 100px;
+    cursor: none;
+    background: rgb(19, 63, 2);
+    border: #000 solid 3px;
+}
+
+#result {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: rgb(63, 161, 71);
+    border: #fff 3px solid;
+
+}
+
+/* S */
+
+.fa-copy {
+    padding: 20px;
+}
+
+#click-copy {
+    /* display: inline-block; */
+    padding: 100px;
+
+    border: none;
+    
+    border-radius: 50%;
+    background-color: #0989;
+}
