@@ -16,7 +16,7 @@ h1 {
     padding: 100px 100px;
     cursor: none;
     background: rgb(19, 63, 2);
-    border: #000 solid 3px;
+    border: #000000 solid 3px;
 }
 
 #result {
@@ -32,24 +32,26 @@ h1 {
 
 .fa-copy {
     padding: 20px;
-    color: red;
+    /* color: red; */
 }
 
 #click-copy {
-    display: inline-block;
+    /* display: inline-block;
     padding: 100px;
 
-    text-decoration: none;
+    /* text-decoration: none; */
 
-    border: none;
+    /* border: none;
     
     border-radius: 50%;
-    background-color: #07747c;
+    color: #07747c;
+    color: #fff;  */
 
 
-
-
-    
-
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
 
 }
