@@ -70,7 +70,7 @@ window.onload = function () {
 
 // Button reaction
 
-var code_copy = document.querySelector('#click-copy');
+var code_copy = document.querySelector('#click');
 code_copy.addEventListener('click', function (event) {
     // Select the copy 
     var code_data = document.querySelector('#result');
