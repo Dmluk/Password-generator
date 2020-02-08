@@ -14,8 +14,8 @@ h1 {
     font-size: 30px;
     color: lightblue;
     padding: 100px 100px;
-    cursor: none;
-    background: rgb(19, 63, 2);
+    /* cursor: none; */
+    background: rgb(204, 223, 197);
     border: #000000 solid 3px;
 }
 
