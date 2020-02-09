@@ -14,16 +14,36 @@ h1 {
     font-size: 30px;
     color: lightblue;
     padding: 100px 100px;
-    cursor: wait;
-    background: rgb(19, 63, 2);
+    cursor: none;
+    background:  #142850;
     border: #000 solid 3px;
 }
 
+.unselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
+}
+
 #result {
+    cursor: none;
     text-align: center;
     font-size: 36px;
     font-weight: bold;
-    background-color: rgb(63, 161, 71);
+    background-color: #27496d;
     border: #fff 3px solid;
+    margin-bottom: 10px;
 
 }
+
+#click {
+    /* color: #0c7b93; */
+    display: inline-block;
+    background-color: #00a8cc;
+    padding: 30px;
+    border: 3px solid #000;
+    /* border-radius: 50%; */
