@@ -17,10 +17,10 @@ h1 {
     text-align: center;
     font-weight: 700;
     font-size: 30px;
-    color: lightblue;
+    color: #ee4540;
     padding: 100px 100px;
     cursor: none;
-    background:  #142850;
+    background:  #2d132c;
     border: #000 solid 3px;
 }
 
@@ -35,21 +35,64 @@ h1 {
 }
 
 #result {
-    /* cursor: none; */
+    cursor: none;
     text-align: center;
     font-size: 36px;
     font-weight: bold;
-    background-color: #27496d;
+    background-color: #801336;
     border: #fff 3px solid;
     margin-bottom: 10px;
 
 }
 
-#click {
-    /* color: #0c7b93; */
-    display: inline-block;
-    background-color: #00a8cc;
-    padding: 30px;
-    border: 3px solid #000;
-    /* border-radius: 50%; */
+.btn {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 84%;
+
+        padding: 0;
+        border: none;
+        font: inherit;
+        color: inherit;
+        background-color: transparent;
+        cursor: pointer;
+
+          /* по-умолчанию для <button>, но пригодится для <a> */
+   display: inline-block;
+   text-align: center;
+   text-decoration: none;/* создаём маленькие отступы, если кнопки перенесутся на две строки */
+   margin: 2px 0;/* невидимая граница (понадобится для цвета при наведении/фокусе) */
+   border: solid 1px transparent;
+   border-radius: 50%;/* размер строится из текста и отступов (без width/height) */
+   padding: 0.5em 1em;/* убедитесь, что достаточно контраста! */
+   color: #2d132c;
+   background-color: #ee4540;
+
+   height: 150px;
+   width: 150px;
+
 }
+
+.btn:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+}
+
+/* .btn:hover,
+.btn:focus {
+   color: #9555af;
+   border-color: currentColor;
+   background-color: white;
+} */
+
+.btn {
+    /* ... */
+    /* все браузеры: сбрасываем дефолтный outline,
+       так как у нас уже есть собственные стили*/
+    outline: none;
+ }/* Firefox: сбрасываем внутреннюю границу при фокусе*/
+ .btn::-moz-focus-inner {
+    border: none;
+ }
+
