@@ -1,25 +1,39 @@
 body {
     padding: 0;
-    margin: 0 auto     ;
+    margin: 0 auto;
+    
+    overflow: hidden;
+    /* overflow-x: hidden; */
 }
 
-h1 {
-    text-align: center;
-}
+/* .gotit {
+
+    font-size: 4rem;
+
+    text-transform: uppercase;
+    color: #ee4540;
+    opacity: .1;
+
+} */
 
 .txt-guide {
-    font-size: 3rem;
-    text-transform: uppercase;
+    
+    font-size: 7rem;
+    color: #ee4540;
     opacity: .1;
 }
 
+
+
 #field {
-    text-align: center;
+    text-transform: uppercase;
+    
     font-weight: 700;
-    font-size: 30px;
-    color: #ee4540;
-    padding: 100px 100px;
-    cursor: none;
+    text-align: center;
+    justify-content: center;
+    /* padding: 500px 500px; */
+    height: 90vh;
+    cursor:progress; 
     background:  #2d132c;
     border: #000 solid 3px;
 }
@@ -37,40 +51,55 @@ h1 {
 #result {
     cursor: none;
     text-align: center;
-    font-size: 36px;
+
+    padding: 1rem 3rem;
+    font-size: 2rem;
     font-weight: bold;
     background-color: #801336;
-    border: #fff 3px solid;
-    margin-bottom: 10px;
+    /* border: #fff 3px solid; */
+    /* margin-bottom: 10px; */
 
 }
+
+#success {
+    display: none;
+
+    font-size: 4rem;
+
+    text-transform: uppercase;
+
+    color: #ee4540;
+    opacity: .7;
+
+}
+
 
 .btn {
     position: absolute;
     z-index: 100;
-    top: 50%;
-    left: 84%;
+    top: 75vh;
+    left: 87vw;
 
-        padding: 0;
-        border: none;
-        font: inherit;
-        color: inherit;
-        background-color: transparent;
-        cursor: pointer;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
 
           /* по-умолчанию для <button>, но пригодится для <a> */
    display: inline-block;
-   text-align: center;
+   /* text-align: */
    text-decoration: none;/* создаём маленькие отступы, если кнопки перенесутся на две строки */
    margin: 2px 0;/* невидимая граница (понадобится для цвета при наведении/фокусе) */
    border: solid 1px transparent;
    border-radius: 50%;/* размер строится из текста и отступов (без width/height) */
-   padding: 0.5em 1em;/* убедитесь, что достаточно контраста! */
+   padding: 0.5rem 1rem;/* убедитесь, что достаточно контраста! */
    color: #2d132c;
    background-color: #ee4540;
 
-   height: 150px;
-   width: 150px;
+   height: 30rem;
+   width: 30rem;
 
 }
 
@@ -94,5 +123,13 @@ h1 {
  }/* Firefox: сбрасываем внутреннюю границу при фокусе*/
  .btn::-moz-focus-inner {
     border: none;
+
  }
+
+.icon {
+    position: relative;
+    z-index: 101;
+    top: -6rem;
+    left: -5rem;
+}
 

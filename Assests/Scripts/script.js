@@ -90,5 +90,23 @@ code_copy.addEventListener('click', function (event) {
     // Remove the selections - NOTE: Should use
     // removeRange(range) when it is supported  
     window.getSelection().removeAllRanges();
+
+
+// "Successfully copied" message
+
+
+document.onToggle('click')=function copied () {
+    var text = document.getElementById('#success');
+
+
+        if (text.style.display === 'none') {
+            text.style.display = 'block';
+        } else {
+            text.style.display = 'none';
+        }
+    };
+
 });
+
+
 
