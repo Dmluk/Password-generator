@@ -92,21 +92,19 @@ code_copy.addEventListener('click', function (event) {
     window.getSelection().removeAllRanges();
 
 
-// "Successfully copied" message
+    // "Successfully copied" message
 
 
-document.onToggle('click')=function copied () {
-    var text = document.getElementById('#success');
-
-
-        if (text.style.display === 'none') {
+    appear = function () {
+        var text = document.getElementById('success');
+        if (text.style.display === 'none')
             text.style.display = 'block';
-        } else {
+        else {
             text.style.display = 'none';
         }
     };
-
 });
 
 
 
+// toggle_visibility = function(id) {
