@@ -4,17 +4,12 @@ body {
     
     overflow: hidden;
     /* overflow-x: hidden; */
+
+    background-color: #801336;
+    
 }
 
-/* .gotit {
 
-    font-size: 4rem;
-
-    text-transform: uppercase;
-    color: #ee4540;
-    opacity: .1;
-
-} */
 
 .txt-guide {
     
@@ -52,6 +47,8 @@ body {
     cursor: none;
     text-align: center;
 
+    color: #2d132c;
+
     padding: 1rem 3rem;
     font-size: 2rem;
     font-weight: bold;
@@ -62,17 +59,65 @@ body {
 }
 
 #success {
-    display: none;
+    /* display: none; */
+
+    opacity: 0;
 
     font-size: 4rem;
 
     text-transform: uppercase;
 
     color: #ee4540;
-    opacity: .7;
+
+
+    animation: fade 1.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade {
+
+    from {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 100;
+
+
+        /* animation-tim
+        ing-function: ease-in-out; */
+    }
+
+    to {
+        opacity: 0;
+    }
+
 
 }
 
+    /* opacity: .7; */
+
+    /* transition: .5s cubic-bezier(0, 0, 1, 1) 200ms; */
+
+
+/* #success::after {
+    opacity: 0;
+} */
+
+/* .gotit {
+
+    -webkit-transition: all .5s opacity 100;  
+    -moz-transition: all .5s opacity 100;  
+    -o-transition: all .5s opacity 100;  
+    -ms-transition: all .5s opacity 100;  
+    transition: all .5s opacity 100;
+
+}
+
+.gotit:active + #successfull {
+    opacity: 0;
+
+} */
 
 .btn {
     position: absolute;
@@ -87,9 +132,7 @@ body {
     background-color: transparent;
     cursor: pointer;
 
-          /* по-умолчанию для <button>, но пригодится для <a> */
    display: inline-block;
-   /* text-align: */
    text-decoration: none;/* создаём маленькие отступы, если кнопки перенесутся на две строки */
    margin: 2px 0;/* невидимая граница (понадобится для цвета при наведении/фокусе) */
    border: solid 1px transparent;
@@ -100,6 +143,7 @@ body {
 
    height: 30rem;
    width: 30rem;
+   outline: none;
 
 }
 
@@ -108,28 +152,38 @@ body {
     filter: saturate(150%);
 }
 
-/* .btn:hover,
-.btn:focus {
-   color: #9555af;
-   border-color: currentColor;
-   background-color: white;
-} */
 
-.btn {
-    /* ... */
-    /* все браузеры: сбрасываем дефолтный outline,
-       так как у нас уже есть собственные стили*/
-    outline: none;
- }/* Firefox: сбрасываем внутреннюю границу при фокусе*/
  .btn::-moz-focus-inner {
     border: none;
 
+    
+
  }
+
+
 
 .icon {
     position: relative;
     z-index: 101;
     top: -6rem;
     left: -5rem;
+
+   color: #2d132c;
 }
 
+/* .gotit {
+    animation: fade 1s;
+    animation-timing-function: 2;
+}
+
+@keyframes fade {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+
+} */

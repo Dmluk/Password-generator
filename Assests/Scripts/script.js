@@ -102,8 +102,11 @@ code_copy.addEventListener('click', function (event) {
         else {
             text.style.display = 'none';
         }
-    };
+
+    }
 });
+
+
 
 
 
