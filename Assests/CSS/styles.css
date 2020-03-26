@@ -30,7 +30,7 @@ body {
     height: 90vh;
     cursor:progress; 
     background:  #2d132c;
-    border: #000 solid 3px;
+    border:transparent solid 1px;
 }
 
 .unselect {
@@ -70,7 +70,7 @@ body {
     color: #ee4540;
 
 
-    animation: fade 1.5s;
+    animation: fade 2s;
     animation-iteration-count: 1;
 }
 
@@ -90,34 +90,13 @@ body {
 
     to {
         opacity: 0;
+        
     }
 
 
 }
 
-    /* opacity: .7; */
-
-    /* transition: .5s cubic-bezier(0, 0, 1, 1) 200ms; */
-
-
-/* #success::after {
-    opacity: 0;
-} */
-
-/* .gotit {
-
-    -webkit-transition: all .5s opacity 100;  
-    -moz-transition: all .5s opacity 100;  
-    -o-transition: all .5s opacity 100;  
-    -ms-transition: all .5s opacity 100;  
-    transition: all .5s opacity 100;
-
-}
-
-.gotit:active + #successfull {
-    opacity: 0;
-
-} */
+   
 
 .btn {
     position: absolute;

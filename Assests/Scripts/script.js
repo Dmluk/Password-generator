@@ -70,7 +70,7 @@ window.onload = function () {
 
 // Button reaction
 
-var code_copy = document.querySelector('#click');
+var code_copy = document.querySelector('#clicked');
 code_copy.addEventListener('click', function (event) {
     // Select the copy 
     var code_data = document.querySelector('#result');
@@ -82,7 +82,7 @@ code_copy.addEventListener('click', function (event) {
         // Now that we've selected the anchor text, execute the copy command  
         var successful = document.execCommand('copy');
         var msg = successful ? 'successful' : 'unsuccessful';
-        console.log('Copy email command was ' + msg);
+        console.log('Copied ' + msg);
     } catch (err) {
         console.log('Oops, unable to copy');
     }
@@ -95,19 +95,16 @@ code_copy.addEventListener('click', function (event) {
     // "Successfully copied" message
 
 
-    appear = function () {
-        var text = document.getElementById('success');
-        if (text.style.display === 'none')
-            text.style.display = 'block';
-        else {
-            text.style.display = 'none';
-        }
-
-    }
 });
 
+        appear = function () {
 
 
-
-
-// toggle_visibility = function(id) {
+            var text = document.getElementById('success');
+            if (text.style.display === 'none')
+                text.style.display = 'block';
+            else {
+                text.style.display = 'none'
+            }
+    
+        };
